@@ -5,7 +5,7 @@
   <groupId>com.github.jitpack</groupId>
   <artifactId>maven-simple</artifactId>
   <version>0.2-SNAPSHOT</version>
-  <packaging>war</packaging>
+  <packaging>jar</packaging>
 
   <name>Simple Maven example</name>
   <url>https://jitpack.io/#jitpack/maven-simple/0.1</url>
@@ -23,12 +23,7 @@
     <artifactId>sonar-maven-plugin</artifactId>
     <version>3.9.0.2155</version>
 </dependency>
-	  <dependency>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-war-plugin</artifactId>
-    <version>3.3.1</version>
-</dependency>
-
+	 
 
   </dependencies>
   
@@ -52,7 +47,7 @@
                     <execution>
                         <id>attach-sources</id>
                         <goals>
-                            <goal>war</goal>
+                            <goal>jar</goal>
                         </goals>
                     </execution>
                 </executions>
@@ -65,7 +60,7 @@
                     <execution>
                         <id>attach-javadocs</id>
                         <goals>
-                            <goal>war</goal>
+                            <goal>jar</goal>
                         </goals>
                     </execution>
                 </executions>
